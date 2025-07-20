@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.choices{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    cursor: pointer;text-align: center;
+    border-radius: 50%;
+     transition: transform 0.2s, box-shadow 0.2s;
+}
+.choice img {
+    width: 100px; /* Set a fixed width for images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Hover effect for choices */
+.choice:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Optional: Active state styling */
+.choice:active {
+    transform: scale(0.95); /* Slightly shrink when clicked */
+}
+/* Choice styles */
+.choices {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.choice {
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: transform 0.2s ease;
+    margin: 0 10px;
+}
+
+.choice:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+    border: 2px solid #007BFF; /* Highlight border on hover */
+}
+
+/* Active class to indicate selection */
+.choice.active {
+    border: 2px solid #28a745; /* Green border for active selection */
+}
+
+
+
+.score-board{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    align-items: center;
+    font-size: 2rem;
+}
+.user-score,
+.comp-score{
+    font-size: 4rem;
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Scoreboard styles */
+.score-board {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.score {
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 0 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.score:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+.score p {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Message styles */
+.msg {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+}
+
+/* Animation for the message */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 600px) {
+    .score {
+        margin: 0 10px;
+        padding: 10px;
+    }
+
+    .msg {
+        font-size: 18px;
+    }
+}
+/* Message styles */
+.msg {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333; /* Darker text color for better readability */
+    background-color: #fff; /* White background for contrast */
+    border: 2px solid #007BFF; /* Blue border to match the theme */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Padding for spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+}
+
+/* Animation for the message */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive styles for messages */
+@media (max-width: 600px) {
+    .msg {
+        font-size: 18px; /* Smaller font size on mobile */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+
+
